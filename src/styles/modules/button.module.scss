@@ -1,0 +1,22 @@
+/* button.module.scss */
+
+.button {
+  /* Your default button styles */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #dbd0d0, #c692d6);
+  color: #333; /* Default text color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-image: linear-gradient(to right, #f0f0f0, #ff69b4); /* Gradient from grey to pink */
+    color: rgb(200, 35, 35); /* Change text color on hover */
+  }
+
+  &.clicked {
+    background-image: none; /* Reset gradient on click */
+    background-color: #f0f0f0; /* Grey background */
+    color: black; /* Black text color */
+  }
+}
